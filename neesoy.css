@@ -1,0 +1,748 @@
+
+ *{
+    /* border: solid 2px black; */
+     transition: background-color 0.5s ease, font-size 0.5s ease, font-family 0.5s ease; /* זמן */
+}
+ 
+ body {
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* עיצוב הקונטיינר הראשי */
+.bigdaddy {
+    height: 1900px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* עיצוב הקבוצות של הכרטיסים */
+.sdaddy {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    height: 365px;
+    width: 1130px;
+
+
+    /* display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 40px; */
+}
+
+/* עיצוב כל כרטיס הודעה */
+
+
+/* =====הראשון===== */
+.mge1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF2F2;
+    border: 1px solid #A9B5DF;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    padding: 16px;
+    align-items: center;
+    transition: transform 0.2s;
+    height: 350px;
+    margin-bottom: 857px;
+
+   margin: 34px;
+}
+
+
+
+
+.mge1:hover {
+    transform: scale(1.02);
+}
+
+/* עיצוב תמונה */
+.pic {
+    /* width: 100%;
+    height: 200px;
+    object-fit: cover; */
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 194px;
+    object-fit: contain;
+    box-shadow: 0 4px 5px #2D336B;
+}
+
+/* עיצוב טקסט האחוזים */
+.pis {
+    font-size: 20px;
+    color: #2D336B;
+    margin: 12px 0;
+    
+}
+
+/* כפתור הסבר */
+.ebu1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    background-color: #2D336B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ebu1:hover {
+    background-color: #7886C7;
+}
+
+/* טקסט שנפתח */
+.text {
+    display: none;
+    font-size: 16px;
+    margin-top: 12px;
+    text-align: right;
+    color: #2D336B;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ======השני======= */
+
+.mge2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF2F2;
+    border: 1px solid #A9B5DF;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    padding: 16px;
+    align-items: center;
+    transition: transform 0.2s;
+    height: 350px;
+    margin-bottom: 857px;
+   
+  
+   margin: 34px;
+}
+
+
+
+
+.mge2:hover {
+    transform: scale(1.02);
+}
+
+/* עיצוב תמונה */
+.pic2 {
+    /* width: 100%;
+    height: 200px;
+    object-fit: cover; */
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 194px;
+    object-fit: contain;
+    box-shadow: 0 4px 5px #2D336B;
+}
+
+/* עיצוב טקסט האחוזים */
+.pis2 {
+    font-size: 20px;
+    color: #2D336B;
+    margin: 12px 0;
+    
+}
+
+/* כפתור הסבר */
+.ebu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    background-color: #2D336B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ebu2:hover {
+    background-color: #7886C7;
+}
+
+/* טקסט שנפתח */
+.text2 {
+    display: none;
+    font-size: 16px;
+    margin-top: 12px;
+    text-align: right;
+    color: #2D336B;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ======השלילשי======= */
+
+
+.mge3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF2F2;
+    border: 1px solid #A9B5DF;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    padding: 16px;
+    align-items: center;
+    transition: transform 0.2s;
+    height: 350px;
+    margin-bottom: 857px;
+    margin: 34px;
+
+   margin: 34px;
+}
+
+
+
+
+.mge3:hover {
+    transform: scale(1.02);
+}
+
+/* עיצוב תמונה */
+.pic3 {
+    /* width: 100%;
+    height: 200px;
+    object-fit: cover; */
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 194px;
+    object-fit: contain;
+    box-shadow: 0 4px 5px #2D336B;
+}
+
+/* עיצוב טקסט האחוזים */
+.pis3 {
+    font-size: 20px;
+    color: #2D336B;
+    margin: 12px 0;
+    
+}
+
+/* כפתור הסבר */
+.ebu3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    background-color: #2D336B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ebu3:hover {
+    background-color: #7886C7;
+}
+
+/* טקסט שנפתח */
+.text3 {
+    display: none;
+    font-size: 16px;
+    margin-top: 12px;
+    text-align: right;
+    color: #2D336B;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* =====הרביעי===== */
+
+
+.mge4 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF2F2;
+    border: 1px solid #A9B5DF;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    padding: 16px;
+    align-items: center;
+    transition: transform 0.2s;
+    height: 350px;
+    margin-bottom:  45px;
+   margin: 34px;
+}
+
+
+
+
+.mge4:hover {
+    transform: scale(1.02);
+}
+
+/* עיצוב תמונה */
+.pic4 {
+    /* width: 100%;
+    height: 200px;
+    object-fit: cover; */
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 194px;
+    object-fit: contain;
+    box-shadow: 0 4px 5px #2D336B;
+}
+
+/* עיצוב טקסט האחוזים */
+.pis4 {
+    font-size: 20px;
+    color: #2D336B;
+    margin: 12px 0;
+    
+}
+
+/* כפתור הסבר */
+.ebu4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    background-color: #2D336B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ebu4:hover {
+    background-color: #7886C7;
+}
+
+/* טקסט שנפתח */
+.text4 {
+    display: none;
+    font-size: 16px;
+    margin-top: 12px;
+    text-align: right;
+    color: #2D336B;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ======החימישי===== */
+
+
+.mge5 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF2F2;
+    border: 1px solid #A9B5DF;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    padding: 16px;
+    align-items: center;
+    transition: transform 0.2s;
+    height: 350px;
+    margin-bottom:  45px;
+   margin: 34px;
+}
+
+
+
+
+.mge5:hover {
+    transform: scale(1.02);
+}
+
+/* עיצוב תמונה */
+.pic5 {
+    /* width: 100%;
+    height: 200px;
+    object-fit: cover; */
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 194px;
+    object-fit: contain;
+    box-shadow: 0 4px 5px #2D336B;
+}
+
+/* עיצוב טקסט האחוזים */
+.pis5 {
+    font-size: 20px;
+    color: #2D336B;
+    margin: 12px 0;
+    
+}
+
+/* כפתור הסבר */
+.ebu5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    background-color: #2D336B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ebu5:hover {
+    background-color: #7886C7;
+}
+
+/* טקסט שנפתח */
+.text5 {
+    display: none;
+    font-size: 16px;
+    margin-top: 12px;
+    text-align: right;
+    color: #2D336B;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* -======השישי====== */
+
+
+.mge6 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF2F2;
+    border: 1px solid #A9B5DF;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    padding: 16px;
+    align-items: center;
+    transition: transform 0.2s;
+    height: 350px;
+    margin-bottom:  45px;
+   margin: 34px;
+}
+
+
+
+
+.mge6:hover {
+    transform: scale(1.02);
+}
+
+/* עיצוב תמונה */
+.pic6 {
+    /* width: 100%;
+    height: 200px;
+    object-fit: cover; */
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 194px;
+    object-fit: contain;
+    box-shadow: 0 4px 5px #2D336B;
+}
+
+/* עיצוב טקסט האחוזים */
+.pis6 {
+    font-size: 20px;
+    color: #2D336B;
+    margin: 12px 0;
+    
+}
+
+/* כפתור הסבר */
+.ebu6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    background-color: #2D336B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ebu6:hover {
+    background-color: #7886C7;
+}
+
+/* טקסט שנפתח */
+.text6 {
+    display: none;
+    font-size: 16px;
+    margin-top: 12px;
+    text-align: right;
+    color: #2D336B;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ------------+=accessibility=+------------ */
+
+.accessibility-menu {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 60%;
+    right: 20px;
+    display: flex;
+    flex-direction: reverse;
+    align-items: center;
+}
+
+.accessibility-button {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);  /* צל */
+    background-color: #4188ed;
+    color: white;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px; 
+    border: none;
+    z-index: 1;  /* שם אותו הכי למעלה כדי שיהיה אפשר ללחוץ עלו */
+}
+/* ----תפריט---נפתח-- */
+.menu {
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* זמן */
+
+    display: flex;
+    flex-direction: column;
+    height: 174px;
+
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+    margin: 0px;
+}
+
+/* .hidden {
+    opacity: 0;
+} */
+
+#Button1{
+    pointer-events: none; /* לבטל אינטראקציות */
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* זמן */
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button1.div{
+    pointer-events: all;  /* מאפשר את הלחיצוץ */
+    opacity: 1;
+}
+
+/* כפתור 2. ואני משנה את המיקום שלו */
+#Button2 {
+    pointer-events: none; /* לבטל אינטראקציות */
+    transition: opacity 1s ease, visibility 1s ease;  /* זמן */
+    opacity: 0;
+
+    position: relative; /* נותן לו אופציה לעלות על דברים */
+    right: 30px;
+
+    /* שיהיה בצורה טוב כזו עיגול */
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button2.div{
+    pointer-events: all;  /* מאפשר את הלחיצוץ */
+    opacity: 1;
+}
+
+#Button3{
+    pointer-events: none; /* לבטל אינטראקציות */
+    opacity: 0;
+    transition: opacity 1.5s ease, visibility 1.5s ease; /* זמן */
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button3.div{
+    pointer-events: all;  /* מאפשר את הלחיצוץ */
+    opacity: 1;
+}
+/* -------------------- */
+
+/* משנה את כל הכפתורים של הנגישות */
+.buttonnegisot {
+    width: 90px;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+}
+
+    /* # זה הID # */
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button1.clicked {
+    background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button2.clicked {
+    background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button3.clicked {
+    background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+/* ------------------ */
+
+/* מקושר אם הJS ומפעיל את הCSS */
+.high-contrast *:not(.accessibility-menu):not(.accessibility-menu *) {
+    background-color: black !important;
+    color: yellow !important;
+}
+  
+.large-text *:not(.accessibility-menu):not(.accessibility-menu *) {
+    font-size: 2vw !important;
+}
+  
+.readable-font *:not(.accessibility-menu):not(.accessibility-menu *) {
+  font-family: Arial, sans-serif !important;
+}
+
+/* ------------------ */
+/* ------------+=accessibility=+------------ */
+
+
+/*=========== גל======= =*/
+
+
+
+.buttons button:hover {
+    background-color: #d3e6f8;
+  }
+  
+  /* Search box */
+  .search-b {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+  }
+  
+  .search {
+    display: flex;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 180px;
+    justify-self: right;
+   
+  }
+  
+  
+  .search1 {
+    font-size: 23px;
+    color: #555;
+  }
+  
+  .second-title{
+    border:  solid rgb(88, 82, 108) 3px; 
+    color: #f0f4f8;
+  }
+   
+  .Contact-us-Link{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .second-title nav {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 12px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px; */
+  }
+  
+  
+  .second-title nav a {
+    color: #004080;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .second-title nav a:hover {
+    text-decoration: underline;
+  }
+  
+   .search-b {
+    display: flex;
+  
+    gap: 8px;
+    margin-bottom: 15px;
+    margin-right: auto;
+     /* Pushes it to the right in RTL layout */
+    }
+
+    /* ======גל========== */
+
+.img{
+display: flex;
+justify-content: end;
+position: absolute;
+left: 60px;
+height: 75px;
+width: 75px;
+margin-top: 10px;
+top: 0;
+z-index: 20;
+
+}
+

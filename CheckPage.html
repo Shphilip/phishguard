@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard - בדיקת ההודעה</title>
+    <link rel="stylesheet" href="CheckPage.css">
+</head>
+<body>
+
+    <!-- Navigation Div -->
+    <div class="NaviBar">
+        <button onclick="GoToPage('Index.html')" class="Button1">ראשי</button>
+        <button onclick="GoToPage('endprojectyear1')" class="Button2">הדרכה</button>
+        <button onclick="GoToPage('ex26.html')" class="Button3">יצירת קשר</button>
+        <button onclick="GoToPage('CheckPage.html')" class="Button4">הכנסת הודעה חשודה</button>
+        <button onclick="GoToPage('ex1.html')" class="Button5">הרשמה</button>
+        <button onclick="GoToPage('neesoy.html')" class="Button6">מאגר הודעות לדוגמא</button>
+        <button onclick="GoToPage('ep.html')" class="Button7">מה עושים אם נפגעתי מפישינג</button>
+        <button onclick="GoToPage('project.html')" class="Button8">אודות</button>
+    </div>
+    <!-- Navigation Div -->
+
+    <div class="MainDiv">
+        <div class="SubDiv">
+            <h2 class="MainTitle">איתור פישינג ונוכלות</h2>
+            <!-- <hr class="Breakline"> -->
+            <p class="ToDoParagraph">הכנס את תוכן ההודעה:</p>
+            <div class="HighlightContainter">
+            <div class="HighlightedText" id="highlighter"></div>
+            <textarea class="EnterTextArea" name="EnterTextArea" id="EnterTextArea" placeholder="הכנס הודעה פה:" oninput="CheckEmpty()"></textarea>
+            </div>
+            <button onclick="SplitText()" class="SubmitButton" id="SubmitButton">שלח לאיתור</button>
+            <button onclick="RefreshPage()" class="RefreshButton" id="RefreshButton"></button>
+        </div>
+    </div>
+
+    <!-- ------------+=accessibility=+------------ -->
+    <div class="accessibility-menu">
+        <button onclick="toggleMenu()" class="accessibility-button">♿︎</button>
+        <div id="accessibility-options" class="menu">
+          <!-- הכפתור 1 -->
+          <button onclick="toggleContrast()" class="buttonnegisot" id="Button1">ניגודיות גבוהה</button>
+          <!-- הכפתור 2 -->
+          <button onclick="toggleTextSize()" class="buttonnegisot" id="Button2">הגדלת טקסט</button>
+          <!-- הכפתור 3 -->
+          <button onclick="toggleReadableFont()" class="buttonnegisot" id="Button3">פונט קריא</button>
+        </div>
+    </div>
+    <!-- ------------+=accessibility=+------------ -->
+
+    <script src="CheckPage.js"></script>
+
+</body>
+</html>

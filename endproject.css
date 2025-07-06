@@ -1,0 +1,625 @@
+
+
+
+
+
+
+/* מספר 1
+.bigdad{
+display: flex;
+flex-direction: column;
+
+
+
+
+*{
+    border: 2px solid black;
+}
+
+
+img {
+
+width: 400px;
+height: 250px;
+ 
+}
+
+.dad2{
+
+display:flex;
+flex-direction: row;
+justify-content:center ;
+
+
+
+}
+
+.dad3{
+
+display:flex;
+flex-direction: row;
+justify-content:space-around ;
+    
+
+}
+
+
+.dad10{
+
+display:flex;
+flex-direction: row;
+justify-content:space-around ;
+    
+
+}
+
+.dad30{
+
+    display:flex;
+    flex-direction:column;
+
+}
+ */
+
+ /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    direction: rtl;
+    padding: 20px;
+}
+
+.bigdad {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dad1,
+.dad2,
+.dad3,
+.dad10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dad2 h1 {
+    font-size: 2.5rem;
+    color: #0d47a1;
+    text-align: center;
+}
+
+.dad3 > div,
+.dad10 > div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    max-width: 500px;
+    flex: 1;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .dad3,
+    .dad10 {
+        flex-direction: column;
+    }
+
+    .dad2 h1 {
+        font-size: 2rem;
+    }
+} */
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+    /* * *:not(.accessibility-menu):not(.accessibility-menu *){
+        margin: 1;
+        padding: 1;
+        border: black 2px solid;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f5f2;
+    } */
+
+
+
+
+
+body {
+    background-color: #59508a;
+    color: #333;
+    line-height: 1.6;
+    direction: rtl;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(white, rgb(54, 103, 195));
+
+}
+
+/* קונטיינר עיקרי */
+.bigdad {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+   
+}
+
+/* אזור לוגו/תמונה עליונה */
+.dad1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 500px;
+    height: 500px; */
+}
+
+/* כותרת */
+.dad2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+    
+.dad2 h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+/* אזור כרטיסי פישינג */
+.dad3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* רווח בין תמונות או בין אלמנטים */
+    gap: 100px;
+}
+
+.dad3 .case {
+    /* background-color: #bccee7;  */
+    background: linear-gradient(white, rgb(140, 171, 230));
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(222, 17, 17, 0.07);
+    max-width: 300px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* אזור הסרטונים */
+.dad10 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.dad10 .video {
+    background: linear-gradient(white, rgb(140, 171, 230));
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    max-width: 300px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+
+}
+
+/* תמונות */
+img {
+    width: 200px;
+    max-width: 300px;
+    height: 20  0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+/* טקסט */
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* וידאו */
+iframe {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* אחראי על הגודל של כל הפסקאות */
+.dad400{
+    font-size:25px;
+
+}
+
+.dad500{
+
+    font-size:20px;
+
+
+}
+
+/* מובייל */
+@media screen and (max-width: 768px) {
+    .dad3,
+    .dad10 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dad2 h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------+=accessibility=+------------ */
+*{
+    /* border: 1px solid black; */
+
+    transition: background-color 0.5s ease, font-size 0.5s ease, font-family 0.5s ease; /* זמן */
+}
+.accessibility-menu {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 60%;
+    right: 20px;
+    display: flex;
+    flex-direction: reverse;
+    align-items: center;
+}
+
+.accessibility-button {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);  /* צל */
+    background-color: #4188ed;
+    color: white;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px; 
+    border: none;
+    z-index: 1;  /* שם אותו הכי למעלה כדי שיהיה אפשר ללחוץ עלו */
+}
+/* ----תפריט---נפתח-- */
+.menu {
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* זמן */
+
+    display: flex;
+    flex-direction: column;
+    height: 174px;
+
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+    margin: 0px;
+}
+
+/* .hidden {
+    opacity: 0;
+} */
+
+#Button1{
+    pointer-events: none; /* לבטל אינטראקציות */
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* זמן */
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button1.div{
+    pointer-events: all;  /* מאפשר את הלחיצוץ */
+    opacity: 1;
+}
+
+/* כפתור 2. ואני משנה את המיקום שלו */
+#Button2 {
+    pointer-events: none; /* לבטל אינטראקציות */
+    transition: opacity 1s ease, visibility 1s ease;  /* זמן */
+    opacity: 0;
+
+    position: relative; /* נותן לו אופציה לעלות על דברים */
+    right: 30px;
+
+    /* שיהיה בצורה טוב כזו עיגול */
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button2.div{
+    pointer-events: all;  /* מאפשר את הלחיצוץ */
+    opacity: 1;
+}
+
+#Button3{
+    pointer-events: none; /* לבטל אינטראקציות */
+    opacity: 0;
+    transition: opacity 1.5s ease, visibility 1.5s ease; /* זמן */
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button3.div{
+    pointer-events: all;  /* מאפשר את הלחיצוץ */
+    opacity: 1;
+}
+/* -------------------- */
+
+/* משנה את כל הכפתורים של הנגישות */
+.buttonnegisot {
+    width: 90px;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+}
+
+    /* # זה הID # */
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button1.clicked {
+    background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button2.clicked {
+    background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button3.clicked {
+    background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+/* ------------------ */
+
+/* מקושר אם הJS ומפעיל את הCSS */
+.high-contrast *:not(.accessibility-menu):not(.accessibility-menu *) {
+    background-color: black !important;
+    color: yellow !important;
+}
+  
+.large-text *:not(.accessibility-menu):not(.accessibility-menu *) {
+    font-size: 2vw !important;
+}
+  
+.readable-font *:not(.accessibility-menu):not(.accessibility-menu *) {
+  font-family: Arial, sans-serif !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ */
+/* ------------+=accessibility=+------------ */
+
+
+
+
+
+/* <div class="second-title">
+    <nav>
+      <inputfont class="search" type="text" placeholder="חיפוש" />
+      <a href="ep.html" class="Contact-us-Link">ראשי</a>
+      <a href="" class="Contact-us-Link">הדרכה</a>
+      <a href="" class="Contact-us-Link">יצירת קשר</a>
+      <a href="" class="Contact-us-Link">להכנסת הודעה חשובה</a>
+      <a href="" class="Contact-us-Link">הרשמה</a>
+      <a href="" class="Contact-us-Link">מאגר הודעות לדוגמא</a>
+      <a href="mp.html" class="Contact-us-Link">מה עושים אם נפגעתי מפישינג?</a>
+      <a class="Contact-us-Link">אודות</a>
+    </nav>
+  </div> */
+
+.buttons button:hover {
+    background-color: #d3e6f8;
+  }
+  
+  /* Search box */
+  .search-b {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+  }
+  
+  .search {
+    display: flex;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 180px;
+    justify-self: right;
+   
+  }
+  
+  
+  .search1 {
+    -size: 23px;
+    color: #555;
+  }
+  
+  .second-title{
+   
+    color: #f0f4f8;
+    width: 100%;
+    height: 40px;
+  }
+   
+  .Contact-us-Link{
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .second-title nav {
+    display: flex;
+    justify-content: space-around;
+    /* height: 40px; */
+    /* padding: 12px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px; */
+  }
+  
+  
+  .second-title nav a {
+    color: #004080;
+  
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .second-title nav a:hover {
+    text-decoration: underline;
+    height: 40px;
+  }
+  
+   .search-b {
+    display: flex;
+  
+    gap: 8px;
+    margin-bottom: 15px;
+    margin-right: auto; }

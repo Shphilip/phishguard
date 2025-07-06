@@ -1,0 +1,409 @@
+
+* *:not(.accessibility-menu):not(.accessibility-menu *){
+  font-family: "heebo";
+  /* border: solid black 2px; */
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  padding-top: 80px;
+  direction: rtl;
+}
+
+
+h1{
+  font-family: serif;
+  font-size: 28px;
+  color: #2D336B;
+  /* margin-top: 15px; */
+  text-shadow: #333;
+}
+
+/* Header */
+header h1 {
+  background: white;
+  color: #2D336B;
+  text-align: center;
+   /* padding: 20px; */
+  /* font-size: 24px; */
+  border-bottom: 2px solid #ccc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  z-index: 1000;
+}
+
+/* Main Container */
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  gap: 20px;
+}
+
+/* Accordion Item */
+.accordion-item {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Button */
+.accordion-btn {
+    background-color: #2D336B;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    width: 100%; /* Already full-width of its container */
+    /* text-align: right; */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 30px;
+    gap: 20px;
+    box-sizing: border-box; /* Ensures padding doesn’t overflow */
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background: linear-gradient(to bottom, #e0e4f1, #f0f4f8);
+  }
+  
+  .hero img {
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    color: #333;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  /* Fun Fact Section */
+  .fun-fact {
+    background-color: #fffbe6;
+    border-top: 3px solid #ffcf40;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .fun-fact h2 {
+    margin-top: 0;
+    color: #d29400;
+  }
+  
+  footer {
+    background-color: #2D336B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #ffdf70;
+    text-decoration: underline;
+  }
+  
+
+.accordion-btn:hover {
+  background-color: #3e4783;
+}
+
+/* Accordion Content */
+.accordion-content {
+  display: none;
+  background-color: #e0e4f1;
+  padding: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  gap: 30px; /* increased from 20px */
+}
+
+/* עד פה */
+
+/* Header (fixed and styled) */
+header {
+  color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* header h1 {
+  /* margin: 0; */
+  /* font-size: 22px; */
+  
+/* color: #2D336B;
+}  */
+
+/* Info Container (under the header) */
+.info {
+  background-color: #ffffff;
+  /* margin-top: 80px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  /* padding: 15px 20px; */
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+ 
+}
+
+/* Top bar layout */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+flex-direction: row-reverse;
+
+}
+
+/* Social Media Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  font-size: 20px;
+  background-color: #e7f0fa;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #004080;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #d3e6f8;
+}
+
+/* Search box */
+.search-b {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+}
+
+.search {
+  display: flex;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 180px;
+  justify-self: right;
+  margin-bottom: 17px;
+}
+
+
+.search1 {
+  font-size: 23px;
+  color: #555;
+}
+
+.second-title{
+  border:  solid rgb(#004080) 3px; 
+  color: #f0f4f8;
+}
+ 
+.Contact-us-Link{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.second-title nav {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 12px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px; */
+}
+
+
+.second-title nav a {
+  color: #004080;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.second-title nav a:hover {
+  text-decoration: underline;
+}
+
+ .search-b {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  margin-right: auto; 
+ }
+
+.img{
+/* display: flex; */
+position: absolute;
+height: 75px;
+width: 75px;
+/* align-items: start; */
+margin-top: 10px;
+top: 0;
+z-index: 200000;
+/* height:35px ;
+width:35px ; */
+}
+
+/* ------------+=accessibility=+------------ */
+*{
+  /* border: 1px solid black; */
+
+  transition: background-color 0.5s ease, font-size 0.5s ease, font-family 0.5s ease; /* זמן */
+}
+.accessibility-menu {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  top: 60%;
+  right: 20px;
+  display: flex;
+  flex-direction: reverse;
+  align-items: center;
+}
+
+.accessibility-button {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);  /* צל */
+  background-color: #4188ed;
+  color: white;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px; 
+  border: none;
+  z-index: 1;  /* שם אותו הכי למעלה כדי שיהיה אפשר ללחוץ עלו */
+}
+/* ----תפריט---נפתח-- */
+.menu {
+  opacity: 1;
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* זמן */
+
+  display: flex;
+  flex-direction: column;
+  height: 174px;
+
+  position: relative;
+  left: 20px;
+  bottom: 15px;
+  margin: 0px;
+}
+
+/* .hidden {
+  opacity: 0;
+} */
+
+#Button1{
+  pointer-events: none; /* לבטל אינטראקציות */
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* זמן */
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button1.div{
+  pointer-events: all;  /* מאפשר את הלחיצוץ */
+  opacity: 1;
+}
+
+/* כפתור 2. ואני משנה את המיקום שלו */
+#Button2 {
+  pointer-events: none; /* לבטל אינטראקציות */
+  transition: opacity 1s ease, visibility 1s ease;  /* זמן */
+  opacity: 0;
+
+  position: relative; /* נותן לו אופציה לעלות על דברים */
+  right: 30px;
+
+  /* שיהיה בצורה טוב כזו עיגול */
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button2.div{
+  pointer-events: all;  /* מאפשר את הלחיצוץ */
+  opacity: 1;
+}
+
+#Button3{
+  pointer-events: none; /* לבטל אינטראקציות */
+  opacity: 0;
+  transition: opacity 1.5s ease, visibility 1.5s ease; /* זמן */
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button3.div{
+  pointer-events: all;  /* מאפשר את הלחיצוץ */
+  opacity: 1;
+}
+/* -------------------- */
+
+/* משנה את כל הכפתורים של הנגישות */
+.buttonnegisot {
+  width: 90px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  font-size: 20px;
+  background-color: #f0f0f0;
+  border-radius: 50px;
+}
+
+  /* # זה הID # */
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button1.clicked {
+  background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button2.clicked {
+  background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button3.clicked {
+  background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+/* ------------------ */
+
+/* מקושר אם הJS ומפעיל את הCSS */
+.high-contrast *:not(.accessibility-menu):not(.accessibility-menu *) {
+  background-color: black !important;
+  color: yellow !important;
+}
+
+.large-text *:not(.accessibility-menu):not(.accessibility-menu *) {
+  font-size: 2vw !important;
+}
+
+.readable-font *:not(.accessibility-menu):not(.accessibility-menu *) {
+font-family: Arial, sans-serif !important;
+}
+
+/* ------------------ */
+/* ------------+=accessibility=+------------ */

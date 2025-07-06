@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhishGuard-דף הבית</title>
+  </head>
+  <body>
+    <!-- ------------+=accessibility=+------------ -->
+    <div class="accessibility-menu">
+      <button onclick="toggleMenu()" class="accessibility-button">♿︎</button>
+      <div id="accessibility-options" class="menu">
+        <!-- הכפתור 1 -->
+        <button onclick="toggleContrast()" class="buttonnegisot" id="Button1">
+          ניגודיות גבוהה
+        </button>
+        <!-- הכפתור 2 -->
+        <button onclick="toggleTextSize()" class="buttonnegisot" id="Button2">
+          הגדלת טקסט
+        </button>
+        <!-- הכפתור 3 -->
+        <button
+          onclick="toggleReadableFont()"
+          class="buttonnegisot"
+          id="Button3"
+        >
+          פונט קריא
+        </button>
+      </div>
+    </div>
+    <!-- ------------+=accessibility=+------------ -->
+    <div class="container">
+      <div class="name-site">
+        <div class="part-of-site">
+          <div class="img-logo">
+            <img src="PhishingLogo (1).png" alt="" />
+          </div>
+          <div class="search-i-b">
+            <button class="search-toggle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30"
+                viewBox="0 0 448 512"
+                fill="white"
+              >
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </button>
+            <div class="search-dropdown">
+              <a href="#about-section">אודות</a>
+              <a href="#contact-section">צור קשר</a>
+              <a href="#database-section">מאגר נתונים</a>
+              <a href="#tutorial-section">הדרכה</a>
+              <a href="#Explanation-and-persuasion">הסבר ושכנוע</a>
+            </div>
+          </div>
+        </div>
+        <div class="name-div">
+          <h1>PhishGuard</h1>
+        </div>
+        <div class="Login-to-the-account1">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/007/407/996/small_2x/user-icon-person-icon-client-symbol-login-head-sign-icon-design-vector.jpg"
+          />
+          <a href="ex1.html ">
+            <button class="Login-to-the-account">כניסה לחשבון</button>
+          </a>
+        </div>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+        data-aos-easing="ease-out"
+        class="image-wrapper"
+      >
+        <div class="image-slider" id="slider">
+          <img id="image1" src="img1.png" alt="תמונה 1" />
+          <img id="image2" src="img2.png" alt="תמונה 2" />
+          <img id="image3" src="img3.png" alt="תמונה 3" />
+          <img id="image4" src="img4.png" alt="תמונה 4" />
+          <img id="image5" src="img5.png" alt="תמונה 5" />
+          <img id="image6" src="img6.png" alt="תמונה 6" />
+        </div>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+        data-aos-easing="ease-out"
+        class="info-site"
+      >
+        <div class="purpose-site">
+          <h2 class="purpose-koteret">האתר שלנו</h2>
+          <p>האתר שלנו מזהה עבורך הודעות פישינג.</p>
+          <p>
+            במידת הצורך, הוא גם יסביר לך כיצד לפעול מול ההודעה שקיבלת האם היא
+            מסוכנת, איך לזהות את הסיכון, ומה לעשות הלאה.
+          </p>
+          <p>
+            האתר נבנה מתוך הבנה עמוקה של הצורך במענה אמין ומיידי, כדי לאפשר לך
+            לקבל החלטות מושכלות ולהגן על עצמך בזמן אמת.
+          </p>
+        </div>
+
+        <div class="what-is-phishing">
+          <h2 class="what-is-phishing-koteret">מה זה פישינג?</h2>
+          <p>
+            פישינג (Phishing) הוא ניסיון של תוקפים להתחזות לגורם אמין כדי לגנוב
+            מידע אישי – כמו סיסמאות, פרטי אשראי או פרטי זהות.
+          </p>
+          <p>
+            לרוב, מתקפות פישינג מתבצעות דרך הודעות דוא"ל, SMS או אתרים מזויפים
+            שנראים לגיטימיים.
+          </p>
+          <p>
+            המטרה היא לגרום לאדם ללחוץ על קישור מזויף או למסור מידע רגיש – מבלי
+            להבין שמדובר בהונאה.
+          </p>
+        </div>
+      </div>
+      <div class="kav"></div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+        data-aos-easing="ease-out"
+        class="Checking-message"
+      >
+        <p>אתם חושבים שיש לכם הודעת פישינג ואתם רוצים למנוע אותה?</p>
+        <a href="CheckPage.html">
+          <button class="b-phishing">לחצו כאן!</button>
+        </a>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+        data-aos-easing="ease-out"
+        class="Site-menu"
+      >
+        <p class="p-our-site">באתר שלנו</p>
+        <div class="Button-collection">
+          <div class="top">
+            <a href="endprojectyear1.html">
+              <div class="Tutorial-page1">
+                <h3>עמוד הדרכה</h3>
+                <button id="tutorial-section" class="Tutorial-page">
+                  <img
+                    src="data:image/png;base64,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"
+                    alt="תמונה של עמוד הדרכה"
+                  />
+                </button>
+              </div>
+            </a>
+            <a href="ep.html">
+              <div class="Explanation-and-persuasion1">
+                <h3>עמוד הסבר ושכנוע</h3>
+                <button
+                  id="Explanation-and-persuasion"
+                  class="Explanation-and-persuasion"
+                >
+                  <img
+                    src="data:image/jpeg;base64,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"
+                    alt="תמונה של הסבר ושכנוע"
+                  />
+                </button>
+              </div>
+            </a>
+            <a href="neesoy.html">
+              <div class="database1">
+                <h3>עמוד מאגר נתונים</h3>
+                <button id="database-section" class="database">
+                  <img src="database.png" 55 alt="תמונה של הסבר ושכנוע" />
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="Bottom">
+            <a href="ex26.html">
+              <div class="making-contact1">
+                <h3>עמוד יצירת קשר</h3>
+                <button id="contact-section" class="making-contact">
+                  <img
+                    src="contant_with_white_bg.png"
+                    alt="תמונה של יצירת קשר"
+                  />
+                </button>
+              </div>
+            </a>
+            <a href="project.html">
+              <div class="about1">
+                <h3>עמוד אודות</h3>
+                <button id="about-section" class="about">
+                  <img
+                    src="data:image/png;base64,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"
+                    alt="תמונה של אודות"
+                  />
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="Bottom-information">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="300"
+          data-aos-easing="ease-out"
+        >
+          <div class="koteret2">
+            <h3>מעוניינים לקבל עדכונים על פישינג?</h3>
+            <div class="kav1"></div>
+          </div>
+          <div class="more-information">
+            <div class="text-b-d">
+              <input class="name" type="text" placeholder="שם פרטי ושם משפחה" />
+              <input class="email" type="text" placeholder="מייל" />
+              <button class="send-b">שליחה</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

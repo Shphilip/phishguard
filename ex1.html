@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex1.css">
+    
+</head>
+<body>
+  <!-- ------------+=accessibility=+------------ -->
+    <div class="accessibility-menu">
+        <button onclick="toggleMenu()" class="accessibility-button">♿︎</button>
+        <div id="accessibility-options" class="menu">
+          <!-- הכפתור 1 -->
+          <button onclick="toggleContrast()" class="buttonnegisot" id="Button1">ניגודיות גבוהה</button>
+          <!-- הכפתור 2 -->
+          <button onclick="toggleTextSize()" class="buttonnegisot" id="Button2">הגדלת טקסט</button>
+          <!-- הכפתור 3 -->
+          <button onclick="toggleReadableFont()" class="buttonnegisot" id="Button3">פונט קריא</button>
+        </div>
+    </div>
+  <!-- ------------+=accessibility=+------------ -->
+    
+    <div class="second-title">
+    <nav>
+      <input class="search" type="text" placeholder="חיפוש" />
+      <a href="index.html" class="Contact-us-Link">ראשי</a>
+      <a href="endprojectyear1" class="Contact-us-Link">הדרכה</a>
+      <a href="ex26.html" class="Contact-us-Link">יצירת קשר</a>
+      <a href="checkpage.html" class="Contact-us-Link">להכנסת הודעה חשודה</a>
+      <a href="ex1.html" class="Contact-us-Link">הרשמה</a>
+      <a href="neesoy.html" class="Contact-us-Link">מאגר הודעות לדוגמא</a>
+      <a href="ep.html" class="Contact-us-Link">מה עושים אם נפגעתי מפישינג?</a>
+      <a class="Contact-us-Link" href="project.html">אודות</a>
+    </nav>
+  </div>
+    <div class="box1">
+        <div class="item2">
+            <!-- <img class="img1" src="https://www.svgrepo.com/show/3874/contact-form.svg" alt="d"> -->
+        <h1>דף הרשמה - fhishguard</h1></div>
+        <div class="item1"><img class="img3" src="PhishingLogo (1) (1).png" alt="ff"></div>
+
+    </div>
+<div class="container2"> 
+   <div class="box4"><img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoIXMqcJQpAF3xrC2TiE633MHRDIniTiPIQ&s" alt="43"></div>
+  <div class="box2">
+    <h2>צור חשבון חדש</h2>
+    <input class="px" type="text" id="fullname" placeholder="שם מלא">
+    <input class="px" type="email" id="email" placeholder="כתובת אימייל">
+    <input class="px" type="password" id="password" placeholder="סיסמה">
+    <input class="px" type="password" id="confirm" placeholder="סיסמה חוזרת">
+
+    <button onclick="register()" class="px">הירשם</button>
+    <p class="px">כבר רשום?</p>
+    <button onclick="location.href='ex3.html'" class="px">התחברות לחשבון קיים</button>
+    <a href="ex2.html" class="px">שכחת את הסיסמה?</a>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="ex1.js">
+    function register() {
+      const name = document.getElementById("fullname").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const pass = document.getElementById("password").value;
+      const confirm = document.getElementById("confirm").value;
+      const message = document.getElementById("message");
+
+      if (!name || !email || !pass || !confirm) {
+        message.textContent = "אנא מלא את כל השדות.";
+        message.style.color = "red";
+      } else if (pass !== confirm) {
+        message.textContent = "הסיסמאות אינן תואמות.";
+        message.style.color = "red";
+      } else {
+        message.textContent = "נרשמת בהצלחה!";
+        message.style.color = "green";
+      }
+    }
+  </script>
+    <div class="box3"> <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI7mj8po2ZYB9sShMK1yjY4Z8jGJunvDa8OA&s" alt="hb"></div>
+    
+</div>
+
+</body>
+</html>

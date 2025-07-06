@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="ex26.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>דף יצירת קשר-PhishGuard</title>
+  </head>
+  <body>
+    <div class="accessibility-menu">
+      <button onclick="toggleMenu()" class="accessibility-button">♿︎</button>
+      <div id="accessibility-options" class="menu">
+        <button onclick="toggleContrast()" class="buttonnegisot" id="Button1">
+          ניגודיות גבוהה
+        </button>
+        <button onclick="toggleTextSize()" class="buttonnegisot" id="Button2">
+          הגדלת טקסט
+        </button>
+        <button
+          onclick="toggleReadableFont()"
+          class="buttonnegisot"
+          id="Button3"
+        >
+          פונט קריא
+        </button>
+      </div>
+    </div>
+
+    <div class="second-title">
+      <nav>
+        <input class="search" type="text" placeholder="חיפוש" />
+        <a href="index.html" class="Contact-us-Link">ראשי</a>
+        <a href="endprojectyear1" class="Contact-us-Link">הדרכה</a>
+        <a href="" class="Contact-us-Link">יצירת קשר</a>
+        <a href="CheckPage.html" class="Contact-us-Link"> הודעה חשובה</a>
+        <a href="ex1.html" class="Contact-us-Link">הרשמה</a>
+        <a href="neesoy.html" class="Contact-us-Link">מאגר הודעות לדוגמא</a>
+        <a href="mp.html" class="Contact-us-Link"
+          >"?מה עושים אם נפגעתי מפישינג"</a
+        >
+        <a href="project.html" class="Contact-us-Link">אודות</a>
+      </nav>
+    </div>
+
+    <div class="house1">
+      <div class="box1">
+        <h1>יצירת קשר עם צוות האתר לשאלות או בעיות טכניות</h1>
+      </div>
+      <div class="logo">
+        <img src="PhishingLogo (1).png" alt="" />
+        <!-- width="100px" height="80px" -->
+      </div>
+    </div>
+
+    <div class="house2">
+      <div class="box2">
+        <div>
+          <h2>טופס יצירת קשר</h2>
+        </div>
+
+        <div class="part1">
+          <input
+            dir="rtl"
+            type="text"
+            id="fullName"
+            placeholder="* שם מלא"
+            required
+          />
+        </div>
+
+        <div class="part2">
+          <input
+            dir="rtl"
+            type="text"
+            id="email"
+            placeholder="* כתובת אימייל"
+            required
+          />
+        </div>
+
+        <div class="part3">
+          <button type="button" id="submitBtn" class="b" onclick="submitForm()">
+            שליחה
+          </button>
+        </div>
+      </div>
+
+      <div class="box3">
+        <div class="part4">
+          <h5 dir="rtl">נא להכניס כאן את פרטי ההודעה שלך</h5>
+          <input
+            dir="rtl"
+            class="in"
+            type="text"
+            placeholder="אני רוצה לכתוב לצוות האתר ש:"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="house3"></div>
+
+    <div class="accordion-content">
+      <p dir="rtl">
+        במקרה של פגיעה כספית בעקבות פישינג, יש לפנות מיד לבנק או לחברת האשראי,
+        לדווח על ההונאה ולבקש לחסום את החשבון ולפתוח בירור. חשוב להגיש תלונה
+        במשטרה ולשמור תיעוד של כל הפרטים הרלוונטיים. ניתן גם לדווח למערך הסייבר
+        הלאומי (CERT-IL) דרך אתר הממשלה, ולהתייעץ עם מוקד 105. יש לשנות סיסמאות
+        בכל החשבונות הקשורים ולנקוט באמצעים מיידיים למניעת נזק נוסף.
+      </p>
+    </div>
+
+    <section class="fun-fact">
+      <h2>💡 ?הידעת</h2>
+      <p dir="rtl">
+        לפי דו"ח מ-2024, 36% מהישראלים נחשפו לניסיון פישינג לפחות פעם אחת בשנה
+        האחרונה!
+      </p>
+    </section>
+
+    <footer>
+      <p dir="auto">
+        להגשת תלונה או יצירת קשר עם CERT-IL, בקרו באתר
+        <a
+          href="https://www.gov.il/he/departments/israel_national_cyber_directorate/govil-landing-page"
+          target="_blank"
+          >מערך הסייבר הלאומי</a
+        >.
+      </p>
+      <p dir="rtl">&copy; 2025 כל הזכויות שמורות</p>
+    </footer>
+
+    <!-- ✅ סקריפט שמטפל בשליחה -->
+    <script src="ex26.js"></script>
+  </body>
+</html>

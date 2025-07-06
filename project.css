@@ -1,0 +1,395 @@
+/* ------------+=accessibility=+------------ */
+*{
+    /* border: 1px solid black; */
+
+    transition: background-color 0.5s ease, font-size 0.5s ease, font-family 0.5s ease; /* זמן */
+}
+.accessibility-menu {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 60%;
+    right: 20px;
+    display: flex;
+    flex-direction: reverse;
+    align-items: center;
+}
+
+.accessibility-button {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);  /* צל */
+    background-color: #4188ed;
+    color: white;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px; 
+    border: none;
+    z-index: 1;  /* שם אותו הכי למעלה כדי שיהיה אפשר ללחוץ עלו */
+}
+/* ----תפריט---נפתח-- */
+.menu {
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* זמן */
+
+    display: flex;
+    flex-direction: column;
+    height: 174px;
+
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+    margin: 0px;
+}
+
+/* .hidden {
+    opacity: 0;
+} */
+
+#Button1{
+    pointer-events: none; /* לבטל אינטראקציות */
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* זמן */
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button1.div{
+    pointer-events: all;  /* מאפשר את הלחיצוץ */
+    opacity: 1;
+}
+
+/* כפתור 2. ואני משנה את המיקום שלו */
+#Button2 {
+    pointer-events: none; /* לבטל אינטראקציות */
+    transition: opacity 1s ease, visibility 1s ease;  /* זמן */
+    opacity: 0;
+
+    position: relative; /* נותן לו אופציה לעלות על דברים */
+    right: 30px;
+
+    /* שיהיה בצורה טוב כזו עיגול */
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button2.div{
+    pointer-events: all;  /* מאפשר את הלחיצוץ */
+    opacity: 1;
+}
+
+#Button3{
+    pointer-events: none; /* לבטל אינטראקציות */
+    opacity: 0;
+    transition: opacity 1.5s ease, visibility 1.5s ease; /* זמן */
+}
+/* שלוחצים עלו הוא ניהיה נראה */
+#Button3.div{
+    pointer-events: all;  /* מאפשר את הלחיצוץ */
+    opacity: 1;
+}
+/* -------------------- */
+
+/* משנה את כל הכפתורים של הנגישות */
+.buttonnegisot {
+    width: 90px;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+}
+
+    /* # זה הID # */
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button1.clicked {
+    background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button2.clicked {
+    background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+
+/* משנה את הצבע של הכפתור מתי שקורים לה */
+#Button3.clicked {
+    background-color: #a5d6a7; /* צבע ירוק בהיר */
+}
+/* ------------------ */
+
+/* מקושר אם הJS ומפעיל את הCSS */
+.high-contrast *:not(.accessibility-menu):not(.accessibility-menu *) {
+    background-color: black !important;
+    color: yellow !important;
+}
+  
+.large-text *:not(.accessibility-menu):not(.accessibility-menu *) {
+    font-size: 2vw !important;
+}
+  
+.readable-font *:not(.accessibility-menu):not(.accessibility-menu *) {
+  font-family: Arial, sans-serif !important;
+}
+
+/* ------------------ */
+/* ------------+=accessibility=+------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* *:not(.accessibility-menu):not(.accessibility-menu *){
+    font-family: "Heebo";
+    font-size: 22px;
+    
+}
+/* עיצוב כללי */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* כותרת האתר */
+.site-header {
+    background-color: #0b558e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+}
+
+.logo {
+  height: 200px;
+  width: 200px
+}
+
+/* אזור האודות */
+.about-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.about-section img {
+  float: left;
+  margin-right: 20px;
+  width: 200px;
+  margin-top: 30px;
+}
+
+/* כותרות */
+.about-section h2 {
+    font-size: 35px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.about-section h3 {
+    font-size: 20px;
+    color: #34495e;
+    margin-top: 30px;
+    hyphens: auto;
+    width: auto;
+}
+/* פסקאות */
+.about-section p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* התאמה למסכים קטנים */
+@media (max-width: 600px) {
+    .about-section {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+    .about-section h3 {
+        font-size: 18px;
+    }
+}
+.p1{
+    margin-left: auto;     
+    margin-right: 40px;    
+    width: fit-content;
+    padding: 10px;
+    font-size: 24px;
+    color: #2c3e50;
+    width: 100%;
+}
+.box{
+    height: 200px;
+    width: 100%;
+}
+
+
+.imgp1{
+    display: flex;
+}
+.img2{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 70px;
+    width: 100px;
+    align-items: center;
+}
+.box{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .team-card {
+    background-color: #f0f4f8;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .site-ending {
+   background-color: #34495e;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    margin: 60px auto;
+    max-width: 800px;
+  }
+
+  .site-ending h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .site-ending p {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .ending-images {
+    margin: 30px 0;
+  }
+
+  .ending-images img {
+    width: 100px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+  }
+
+  .ending-images img:hover {
+    transform: scale(1.1);
+  }
+
+  .signature {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #00796b;
+    margin-top: 30px;
+  }
+  .H22{
+    font-size: 40PX;
+  }
+
+.about-section h2,
+.team-section h2,
+.site-ending h2 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.about-section h3,
+.team-card h3 {
+  font-size: 20px;
+  color: #34495e;
+  margin-top: 30px;
+  hyphens: auto;
+  width: auto;
+}
+ /* {
+    background-color: #d3e6f8;
+  } */
+  
+  /* Search box */
+  .search-b {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+  }
+  
+  .search {
+    display: flex;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 180px;
+    justify-self: right;
+   
+  }
+  
+  
+  .search1 {
+    font-size: 23px;
+    color: #555;
+  }
+  
+  .second-title{
+    border:  solid rgb(88, 82, 108) 3px; 
+    color: #f0f4f8;
+  }
+   
+  .Contact-us-Link{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .second-title nav {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 12px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px; */
+  }
+  
+  
+  .second-title nav a {
+    color: #004080;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .second-title nav a:hover {
+    text-decoration: underline;
+  }
+  
+   .search-b {
+    display: flex;
+  
+    gap: 8px;
+    margin-bottom: 15px;
+    margin-right: auto; 
+}
